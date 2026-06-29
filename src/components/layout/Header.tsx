@@ -5,13 +5,13 @@ import { Button } from "../ui/button";
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-go-yellow border-b-2 border-black">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <div className="flex gap-1.5 items-center bg-white border-2 border-black px-3 py-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-1 hover:rotate-0 transition-transform">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4 relative">
+        <div className="flex gap-1.5 items-center bg-white border-2 border-black px-3 py-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-transform">
           <span className="font-black text-xl tracking-tighter text-go-blue">GO</span>
           <span className="font-black text-xl tracking-tighter">AARHUS</span>
         </div>
 
-        <nav className="hidden md:flex gap-6 items-center font-bold text-sm uppercase tracking-wide">
+        <nav className="hidden md:flex absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 gap-6 items-center font-bold text-sm uppercase tracking-wide">
           <a href="#events" className="hover:text-go-fuchsia hover:underline decoration-2 underline-offset-4 transition-colors">Events</a>
           <a href="#cfp" className="hover:text-go-fuchsia hover:underline decoration-2 underline-offset-4 transition-colors">Speak</a>
           <a href="#companies" className="hover:text-go-fuchsia hover:underline decoration-2 underline-offset-4 transition-colors">Companies</a>

@@ -16,13 +16,13 @@ export function Links() {
             <p className="text-sm font-bold mt-2 bg-go-yellow px-2 py-0.5 border-2 border-black">Join our next event</p>
           </a>
           
-          <a href="https://github.com/go-aarhus" target="_blank" rel="noreferrer" className="group flex flex-col items-center justify-center p-6 bg-black text-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 -rotate-1 hover:rotate-0">
+          <a href="https://github.com/go-aarhus" target="_blank" rel="noreferrer" className="group flex flex-col items-center justify-center p-6 bg-black text-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all duration-200">
             <FaGithub className="w-12 h-12 md:w-16 md:h-16 mb-4 group-hover:scale-110 transition-transform text-white" />
             <h3 className="text-xl md:text-2xl font-black uppercase">GitHub</h3>
             <p className="text-sm font-bold mt-2 bg-white text-black px-2 py-0.5 border-2 border-black">Contribute</p>
           </a>
 
-          <a href="https://www.linkedin.com/company/go-aarhus" target="_blank" rel="noreferrer" className="group flex flex-col items-center justify-center p-6 bg-[#0A66C2] text-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all duration-200 rotate-1 hover:rotate-0">
+          <a href="https://www.linkedin.com/company/go-aarhus" target="_blank" rel="noreferrer" className="group flex flex-col items-center justify-center p-6 bg-[#0A66C2] text-white border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all duration-200">
             <FaLinkedin className="w-12 h-12 md:w-16 md:h-16 mb-4 group-hover:scale-110 transition-transform text-white" />
             <h3 className="text-xl md:text-2xl font-black uppercase">LinkedIn</h3>
             <p className="text-sm font-bold mt-2 bg-white text-black px-2 py-0.5 border-2 border-black">Follow updates</p>

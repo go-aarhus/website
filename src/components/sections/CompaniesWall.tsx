@@ -6,7 +6,7 @@ export function CompaniesWall() {
   return (
     <section id="companies" className="py-20 md:py-28 px-4 relative bg-go-yellow text-black" style={{ clipPath: "polygon(0 0, 100% 4vw, 100% 100%, 0 calc(100% - 4vw))", marginTop: "-4vw", paddingBottom: "10vw" }}>
       <div className="container mx-auto max-w-5xl text-center relative z-10 py-8">
-        <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-10 uppercase drop-shadow-[2px_2px_0px_rgba(0,0,0,1)] bg-white inline-block border-2 border-black px-4 py-2 -rotate-1">
+        <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-10 uppercase drop-shadow-[2px_2px_0px_rgba(0,0,0,1)] bg-white inline-block border-2 border-black px-4 py-2">
           Companies <span className="text-go-blue">Using Go</span>
         </h2>
         
@@ -29,7 +29,7 @@ export function CompaniesWall() {
         </div>
 
         {/* Call to Action */}
-        <div className="bg-white border-2 border-black p-6 md:p-8 max-w-2xl mx-auto shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rotate-1">
+        <div className="bg-white border-2 border-black p-6 md:p-8 max-w-2xl mx-auto shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
           <p className="text-xl md:text-2xl font-black mb-6">
             Is your company missing?
           </p>

@@ -6,11 +6,11 @@ export function Events() {
   const isTBA = upcomingEvent.date === "TBA";
 
   return (
-    <section id="events" className="pt-16 pb-24 md:pb-32 px-4 bg-muted/30">
+    <section id="events" className="pt-16 pb-24 md:pb-32 px-4 bg-white">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-12">
           {!isTBA && (
-            <div className="inline-block bg-go-fuchsia border-2 border-black text-white font-black px-4 py-1.5 mb-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transform -rotate-1 hover:rotate-1 transition-transform cursor-default text-sm tracking-wide">
+            <div className="inline-block bg-go-fuchsia border-2 border-black text-white font-black px-4 py-1.5 mb-3 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transform transition-transform cursor-default text-sm tracking-wide">
               IT'S HAPPENING!
             </div>
           )}
@@ -57,13 +57,13 @@ export function Events() {
           <div>
             <h3 className="text-2xl font-black mb-4 uppercase text-black drop-shadow-sm">Past Events</h3>
             <div className="space-y-4">
-              {pastEvents.map((event, index) => (
-                <div key={event.id} className={`bg-white border-2 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-0.5 transition-all cursor-default ${index % 2 === 0 ? 'rotate-1 hover:rotate-0' : '-rotate-1 hover:rotate-0'}`}>
-                  <h4 className="text-lg md:text-xl font-black mb-2 leading-tight">{event.title}</h4>
+              {pastEvents.map((event) => (
+                <a href={event.link} target="_blank" rel="noreferrer" key={event.id} className="block bg-white border-2 border-black p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer group">
+                  <h4 className="text-lg md:text-xl font-black mb-2 leading-tight group-hover:text-go-blue transition-colors">{event.title}</h4>
                   <div className="flex items-center gap-2 text-sm font-bold text-black bg-go-yellow inline-flex px-2 py-1 border-2 border-black">
                     <Calendar className="w-4 h-4" /> {event.date}
                   </div>
-                </div>
+                </a>
               ))}
             </div>
             <Button variant="outline" className="w-full mt-6 h-12 border-2 border-black bg-white text-black font-black uppercase shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all text-sm md:text-base" asChild>

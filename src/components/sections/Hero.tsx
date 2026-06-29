@@ -3,13 +3,13 @@ import { ArrowRight, Terminal } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative w-full py-12 md:py-20 px-4 bg-background overflow-hidden flex flex-col items-center justify-center">
+    <section className="relative w-full py-12 md:py-20 px-4 bg-white overflow-hidden flex flex-col items-center justify-center">
       {/* Neo-brutalist decorative shapes - toned down */}
       <div className="absolute top-10 left-10 w-16 h-16 bg-go-blue border-2 border-black rounded-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] animate-bounce hidden md:block" style={{ animationDuration: '3s' }} />
       <div className="absolute bottom-10 right-10 w-12 h-12 bg-go-fuchsia border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rotate-12 hidden md:block" />
 
       <div className="container mx-auto text-center z-10 max-w-3xl">
-        <div className="inline-block bg-go-yellow border-2 border-black text-black font-black px-4 py-1.5 mb-6 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-2 hover:rotate-0 transition-transform cursor-default text-sm md:text-base uppercase tracking-wide">
+        <div className="inline-block bg-go-yellow border-2 border-black text-black font-black px-4 py-1.5 mb-6 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-transform cursor-default text-sm md:text-base uppercase tracking-wide">
           The Official Local Go Community
         </div>
         
